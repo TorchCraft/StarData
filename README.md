@@ -12,10 +12,15 @@ cd TorchCraft
 pip install .
 ```
 
+More documentation can be found at https://github.com/TorchCraft/TorchCraft. Realistically, you will only need the replayer modules, which means you can ignore most of the connecting to starcraft parts. Check out the code to document its use
+- [For python](https://github.com/TorchCraft/TorchCraft/blob/master/py/pyreplayer.cpp)
+- For C++: [replayer.h](https://github.com/TorchCraft/TorchCraft/blob/master/include/replayer.h), [frame.h](https://github.com/TorchCraft/TorchCraft/blob/master/include/frame.h)
+- For Lua: [replayer](https://github.com/TorchCraft/TorchCraft/blob/master/lua/replayer_lua.h), and [frame](https://github.com/TorchCraft/TorchCraft/blob/master/lua/frame_lua.h)
+
 ## Downloading the Data
 
 You can find the replays in an AWS S3 bucket at s3://stardata
-- s3://stardata/dumped_replays contains the replays in a format readable by TorchCraft
+- **s3://stardata/dumped_replays** contains the replays in a format readable by TorchCraft
 - s3://stardata/battles are text files, containing one battle each. Each battle is 3 lines:
   - xmin, xmax, ymin, ymax, tmin, tmax: the bounding rectangle for the battle. Multiply time by 3 to get real frame count, or don't to index directly into the dumped datasets.
   - Type and number of units on team 1
