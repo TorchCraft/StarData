@@ -1,5 +1,9 @@
 # StarData
 
+## Overview
+
+We release the largest StarCraft replay dataset yet, by a factor of 10x. The full dataset after compression is 365 GB, 1535 million frames, and 496 million player actions. The entire frame data was dumped out at 8 frames per second. We made a big effort to ensure this dataset is clean and has mostly high quality replays. You can access it with TorchCraft in C++, Python, and Lua. The replays are in an AWS S3 bucket at s3://stardata. Read below for more details, or our whitepaper (arxiv will be out soon!) for more details.
+
 ## Installing TorchCraft
 
 Note: The current set of replays are only compatible with the 1.3.0 version of torchcraft included here.
