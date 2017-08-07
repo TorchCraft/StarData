@@ -1,0 +1,3 @@
+[submodule "TorchCraft"]
+	path = TorchCraft
+	url = https://github.com/TorchCraft/TorchCraft
