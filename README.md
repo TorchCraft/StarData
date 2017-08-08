@@ -21,6 +21,8 @@ More documentation can be found at https://github.com/TorchCraft/TorchCraft. Rea
 - For C++: [replayer.h](https://github.com/TorchCraft/TorchCraft/blob/master/include/replayer.h), [frame.h](https://github.com/TorchCraft/TorchCraft/blob/master/include/frame.h)
 - For Lua: [replayer](https://github.com/TorchCraft/TorchCraft/blob/master/lua/replayer_lua.h), and [frame](https://github.com/TorchCraft/TorchCraft/blob/master/lua/frame_lua.h)
 
+Note: Please make sure you have libzstd-1.1.4+, torchcraft will compile without it but won't be able to read the replays.
+
 ## Downloading the Data
 
 You can find the replays in an AWS S3 bucket at s3://stardata
