@@ -2,7 +2,7 @@
 
 ## Overview
 
-We release the largest StarCraft replay dataset yet, by a factor of 10x. The full dataset after compression is 365 GB, 1535 million frames, and 496 million player actions. The entire frame data was dumped out at 8 frames per second. We made a big effort to ensure this dataset is clean and has mostly high quality replays. You can access it with TorchCraft in C++, Python, and Lua. The replays are in an AWS S3 bucket at s3://stardata. Read below for more details, or our whitepaper (arxiv will be out soon!) for more details.
+We release the largest StarCraft: Brood War replay dataset yet, with 65646 games. The full dataset after compression is 365 GB, 1535 million frames, and 496 million player actions. The entire frame data was dumped out at 8 frames per second. We made a big effort to ensure this dataset is clean and has mostly high quality replays. You can access it with TorchCraft in C++, Python, and Lua. The replays are in an AWS S3 bucket at s3://stardata. Read below for more details, or [our whitepaper on arXiv](https://arxiv.org/abs/1708.02139) for more details.
 
 ## Installing TorchCraft
 
