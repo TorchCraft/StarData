@@ -31,7 +31,7 @@ You can find the replays in an AWS S3 bucket at s3://stardata
   - xmin, xmax, ymin, ymax, tmin, tmax: the bounding rectangle for the battle. Multiply time by 3 to get real frame count, or don't to index directly into the dumped datasets.
   - Type and number of units on team 1
   - Type and number of units on team 2
-- s3://stardata/original_replays.tar contains the original replays.
+- s3://stardata/original_replays.tar.gz contains the original replays.
 
 ## Reproducing Results
 
