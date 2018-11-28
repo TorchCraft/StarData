@@ -26,12 +26,13 @@ Note: Please make sure you have libzstd-1.1.4+, torchcraft will compile without 
 ## Downloading the Data
 
 You can find the replays in an AWS S3 bucket at s3://stardata
-- **s3://stardata/dumped_replays** contains the replays in a format readable by TorchCraft
+- **s3://stardata/dumped_replays** contains the replays in a format readable by TorchCraft 1.3
 - s3://stardata/battles are text files, containing one battle each. Each battle is 3 lines:
   - xmin, xmax, ymin, ymax, tmin, tmax: the bounding rectangle for the battle. Multiply time by 3 to get real frame count, or don't to index directly into the dumped datasets.
   - Type and number of units on team 1
   - Type and number of units on team 2
 - s3://stardata/original_replays.tar.gz contains the original replays.
+- s3://stardata/dumped_replays_tc1.4 contains the replays in a format readable by TorchCraft 1.4, and they were dumped on [this commit](https://github.com/TorchCraft/TorchCraft/commit/a28b153ff10e1826f531d407f723c5e0ccbd488b).
 
 ## Reproducing Results
 
