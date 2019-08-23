@@ -25,14 +25,33 @@ Note: Please make sure you have libzstd-1.1.4+, torchcraft will compile without 
 
 ## Downloading the Data
 
-You can find the replays in an AWS S3 bucket at s3://stardata
-- **s3://stardata/dumped_replays** contains the replays in a format readable by TorchCraft 1.3
-- s3://stardata/battles are text files, containing one battle each. Each battle is 3 lines:
-  - xmin, xmax, ymin, ymax, tmin, tmax: the bounding rectangle for the battle. Multiply time by 3 to get real frame count, or don't to index directly into the dumped datasets.
-  - Type and number of units on team 1
-  - Type and number of units on team 2
-- s3://stardata/original_replays.tar.gz contains the original replays.
-- s3://stardata/dumped_replays_tc1.4 contains the replays in a format readable by TorchCraft 1.4, and they were dumped on [this commit](https://github.com/TorchCraft/TorchCraft/commit/a28b153ff10e1826f531d407f723c5e0ccbd488b).
+- [Link to the original replays](https://dl.fbaipublicfiles.com/stardata/original_replays.tar.gz)
+- Dumped replays, readable by TorchCraft 1.4, dumped on [this commit](https://github.com/TorchCraft/TorchCraft/commit/a28b153ff10e1826f531d407f723c5e0ccbd488b)
+  are available at the following links. They have been chunked to help in downloading.
+  - [00](https://dl.fbaipublicfiles.com/stardata/dumped_replays/0.tar.gz).
+    [01](https://dl.fbaipublicfiles.com/stardata/dumped_replays/1.tar.gz).
+    [02](https://dl.fbaipublicfiles.com/stardata/dumped_replays/2.tar.gz).
+    [03](https://dl.fbaipublicfiles.com/stardata/dumped_replays/3.tar.gz).
+    [04](https://dl.fbaipublicfiles.com/stardata/dumped_replays/4.tar.gz).
+    [05](https://dl.fbaipublicfiles.com/stardata/dumped_replays/5.tar.gz).
+    [06](https://dl.fbaipublicfiles.com/stardata/dumped_replays/6.tar.gz).
+    [07](https://dl.fbaipublicfiles.com/stardata/dumped_replays/7.tar.gz).
+    [08](https://dl.fbaipublicfiles.com/stardata/dumped_replays/8.tar.gz).
+    [09](https://dl.fbaipublicfiles.com/stardata/dumped_replays/9.tar.gz).
+    [10](https://dl.fbaipublicfiles.com/stardata/dumped_replays/10.tar.gz).
+    [11](https://dl.fbaipublicfiles.com/stardata/dumped_replays/1.tar.gz).
+    [12](https://dl.fbaipublicfiles.com/stardata/dumped_replays/12.tar.gz).
+    [13](https://dl.fbaipublicfiles.com/stardata/dumped_replays/13.tar.gz).
+    [14](https://dl.fbaipublicfiles.com/stardata/dumped_replays/14.tar.gz).
+    [15](https://dl.fbaipublicfiles.com/stardata/dumped_replays/15.tar.gz).
+    [16](https://dl.fbaipublicfiles.com/stardata/dumped_replays/16.tar.gz).
+    [17](https://dl.fbaipublicfiles.com/stardata/dumped_replays/17.tar.gz).
+    [18](https://dl.fbaipublicfiles.com/stardata/dumped_replays/18.tar.gz).
+    [19](https://dl.fbaipublicfiles.com/stardata/dumped_replays/19.tar.gz).
+  - Standardized [train](https://dl.fbaipublicfiles.com/stardata/dumped_replays/train.list),
+                 [valid](https://dl.fbaipublicfiles.com/stardata/dumped_replays/valid.list), and
+                 [test](https://dl.fbaipublicfiles.com/stardata/dumped_replays/test.list) sets are also available.
+                 [Here](https://dl.fbaipublicfiles.com/stardata/dumped_replays/all.list) is a list of all the files.
 
 ## Reproducing Results
 
